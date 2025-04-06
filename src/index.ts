@@ -15,7 +15,9 @@ server.tool(
   'generate-id',
   '指定された規格のIDを生成します',
   {
-    'id-type': z.enum(['uuid', 'cuid', 'nanoid']),
+    'id-type': z
+      .enum(['uuid', 'cuid', 'nanoid'])
+      .describe('uuid | cuid | nanoid'),
   },
   ({ 'id-type': idType }) => {
     const id = match(idType)
