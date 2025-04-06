@@ -25,6 +25,7 @@ server.tool(
       .with('cuid', () => cuid())
       .with('nanoid', () => nanoid())
       .exhaustive()
+
     return {
       content: [
         {
