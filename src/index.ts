@@ -13,7 +13,7 @@ const server = new McpServer({
 
 server.tool(
   'generate-id',
-  '指定された規格のIDを生成します',
+  '指定された形式のIDを生成します',
   {
     'id-type': z
       .enum(['uuid', 'cuid', 'nanoid'])
