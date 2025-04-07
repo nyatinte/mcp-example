@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "generate-id": {
+      "command": "npx",
+      "args": ["tsx", "ABS/PATH/TO/mcp-example/src/index.ts"]
+    }
+  }
+}
